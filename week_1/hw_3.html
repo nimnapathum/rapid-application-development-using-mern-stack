@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        fieldset {
+            width: 250px;
+        }
+
+        label{
+            color: #5f5959;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            height: 45px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+            background-color: #676765;
+            color: #ffffff;
+        }
+
+        .boldtext {
+            color: black;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        input[type="checkbox"]{
+            appearance: none;
+            height: 15px;
+            width: 15px;
+            border: 1px solid #444;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            
+        }
+
+        input[type="checkbox"]:checked{
+            background-color: rgb(19, 85, 199);
+        }
+
+        input[type="checkbox"]:checked::after{
+            content: '\2714';
+            color: #ffffff;
+            display: block;
+        }
+
+        input[type="checkbox"]:checked + label {
+            color: black; /* Change to desired color */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <label class="boldtext">Available Hotel Packages</label><br><br>
+                <input type="checkbox" id="wedding" name="wedding" value="Wedding Package">
+                <label for="wedding">Wedding Package</label>
+                <br>
+                <input type="checkbox" id="birthday" name="birthday" value="Birthday Packages">
+                <label for="birthday">Birthday Packages</label>
+                <br>
+                <input type="checkbox" id="normal" name="normal" value="Normal Function Package">
+                <label for="normal">Normal Function Package</label>
+                <br>
+                <input type="checkbox" id="dayout" name="dayout" value="Day out Package">
+                <label for="dayout">Day out Package</label>
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
