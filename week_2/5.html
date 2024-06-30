@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function printODDs(start, end) {
+            for (let index = start; index <= end; index++) {
+                if (index % 2 != 0) {
+                    console.log(index);
+                }
+            }
+        }
+
+        let start = prompt("Enter the Starting number: ");
+        let end = prompt("Enter the Ending number: ")
+        printODDs(start, end);
+    </script>
+</body>
+
+</html>
