@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Library System</title>
+    <!--
+    <style>
+        .container {
+            margin: 20px;
+        }
+        
+        .input-field {
+            margin-bottom: 10px;
+        }
+        
+        .result {
+            margin-top: 10px;
+        }
+    </style>
+-->
+</head>
+
+<body>
+    <div>
+        <h1>Library System</h1>
+        <div class="input-field">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title">
+        </div>
+
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+        </div>
+        <button onclick="addBook()">Add book</button>
+        <button onclick="borrowBook()">Borrow Book</button>
+        <button onclick="returnBook()">Return Book</button>
+
+        <div id="result"></div>
+        <h2>Library Inventory</h2>
+        <ul id="book-list"></ul>
+    </div>
+    <script src="8_ENH.js"></script>
+</body>
+
+</html>

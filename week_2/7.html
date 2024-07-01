@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function reverseString(input) {
+            let string = input.toString();
+            let string_array = string.split('');
+            let len = string_array.length;
+            for (i = 0; i < Math.floor(len / 2); i++) {
+                let temp = string_array[i];
+                string_array[i] = string_array[len - 1 - i];
+                string_array[len - 1 - i] = temp;
+            }
+            return string_array.join('');
+        }
+
+        let StringToBeReversed = 32243;
+        console.log(reverseString(StringToBeReversed));
+    </script>
+</body>
+
+</html>
